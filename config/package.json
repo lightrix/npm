@@ -1,0 +1,19 @@
+{
+	"name": "@playform/config",
+	"version": "0.0.1",
+	"type": "module",
+	"description": "Build config",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Playform/npm.git"
+	},
+	"homepage": "https://github.com/Playform/npm#readme",
+	"bugs": {
+		"url": "https://github.com/Playform/npm/issues"
+	},
+	"author": "Nikola Hristov <nikola@playform.cloud>",
+	"license": "SEE LICENSE IN LICENSE",
+	"exports": {
+		"tsconfig.json": "./tsconfig.json"
+	}
+}
