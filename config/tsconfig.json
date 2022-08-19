@@ -1,21 +1,24 @@
 {
 	"$schema": "https://json.schemastore.org/tsconfig",
-	"include": [
-		"src"
-	],
 	"ts-node": {
 		"esm": true
 	},
+	"include": [
+		"src"
+	],
 	"compilerOptions": {
+		"outDir": "dist",
 		"allowJs": true,
-		"baseUrl": ".",
 		"declaration": true,
 		"emitDeclarationOnly": true,
 		"esModuleInterop": true,
+		"allowUnusedLabels": false,
+		"allowUnreachableCode": false,
 		"forceConsistentCasingInFileNames": true,
+		"exactOptionalPropertyTypes": true,
 		"isolatedModules": true,
 		"lib": [
-			"es2015"
+			"ESNext"
 		],
 		"target": "esnext",
 		"module": "esnext",
@@ -23,9 +26,17 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"strict": true,
-		"outDir": "dist",
 		"types": [
 			"node"
-		]
+		],
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"importsNotUsedAsValues": "error",
+		"checkJs": true
 	}
 }

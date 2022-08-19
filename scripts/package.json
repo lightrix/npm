@@ -13,13 +13,10 @@
 	},
 	"author": "Nikola Hristov <nikola@playform.cloud>",
 	"license": "SEE LICENSE IN LICENSE",
-	"bin": {
-		"playform-build": "./dist/build.js"
-	},
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"scripts": {
-		"build": "ts-node src/build.ts src/build.ts && tsc"
+		"build": "ts-node src/index.ts build 'src/**/*.ts' && tsc"
 	},
 	"devDependencies": {
 		"@playform/config": "0.0.1",

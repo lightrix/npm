@@ -1,10 +1,10 @@
+import esbuild from "esbuild";
 import fs from "fs";
-import esbuild, { BuildOptions, Plugin } from "esbuild";
 
 const outDir = "./dist";
 
-const options: BuildOptions = {
-	entryPoints: [],
+await esbuild.build({
+	entryPoints: ["src/**/*.ts"],
 	format: "esm",
 	minify: true,
 	outdir: outDir,
@@ -21,6 +21,4 @@ const options: BuildOptions = {
 			},
 		},
 	],
-};
-
-await esbuild.build(options);
+});
