@@ -1,6 +1,9 @@
 {
 	"extends": "@playform/config/tsconfig.json",
-	"files": [
-		"src/index.ts"
-	]
+	"include": [
+		"src"
+	],
+	"compilerOptions": {
+		"outDir": "dist"
+	}
 }

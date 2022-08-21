@@ -15,13 +15,20 @@ program
 program
 	.command("build")
 	.description("Build scripts")
-	.argument("<scripts>", "Scripts to build")
-	.action(async (glob: Pattern) => {
-		const files = await FastGlob(glob);
+	.argument("<scripts...>", "Scripts to build")
+	.action(async (scripts: Pattern[]) => {
+		let pipe = [];
+
+		for (const glob of scripts) {
+			for (const file of await FastGlob(glob)) {
+				pipe.push(file);
+			}
+		}
+
 		const outDir = "./dist";
 
 		await esbuild.build({
-			entryPoints: files,
+			entryPoints: pipe,
 			format: "esm",
 			minify: true,
 			outdir: outDir,
@@ -33,7 +40,11 @@ program
 					name: "clean-dist",
 					setup(build) {
 						build.onStart(async () => {
-							await fs.promises.rm(outDir, { recursive: true });
+							try {
+								await fs.promises.rm(outDir, {
+									recursive: true,
+								});
+							} catch (error) {}
 						});
 					},
 				},
