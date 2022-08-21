@@ -3,9 +3,6 @@
 	"ts-node": {
 		"esm": true
 	},
-	"include": [
-		"src"
-	],
 	"compilerOptions": {
 		"outDir": "dist",
 		"allowJs": true,
