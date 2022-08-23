@@ -1,9 +1,9 @@
 # [Playform] build scripts and config
 
-| Repo            | Link                                              | Version |
-| --------------- | ------------------------------------------------- | ------- |
-| [Configuration] | https://github.com/Playform/npm/tree/main/config  | 0.0.1   |
-| [Scripts]       | https://github.com/Playform/npm/tree/main/scripts | 0.0.1   |
+| Repo            | Link                                              | Version                                                                                                                            |
+| --------------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| [Configuration] | https://github.com/Playform/npm/tree/main/config  | [![npm (scoped)](https://img.shields.io/npm/v/@playform/config?color=black&label=%20&logo=npm&logoColor=black)][@playform/config]  |
+| [Scripts]       | https://github.com/Playform/npm/tree/main/scripts | [![npm (scoped)](https://img.shields.io/npm/v/@playform/config?color=black&label=%20&logo=npm&logoColor=black)][@playform/scripts] |
 
 ## Installation
 
@@ -47,7 +47,9 @@ Setup scripts:
 Playform will automatically compile your scripts with [esbuild] and add
 TypeScript types.
 
-[playform]: https://playform.cloud
+[@playform/config]: https://npmjs.org/@playform/config
+[@playform/scripts]: https://npmjs.org/@playform/scripts
 [configuration]: https://github.com/Playform/npm/tree/main/config
 [scripts]: https://github.com/Playform/npm/tree/main/scripts
+[playform]: https://playform.cloud
 [esbuild]: https://npmjs.org/esbuild
