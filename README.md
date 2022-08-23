@@ -44,7 +44,7 @@ Setup scripts:
 }
 ```
 
-Playform will now automatically compile your scripts with [esbuild] and add
+Playform will automatically compile your scripts with [esbuild] and add
 TypeScript types.
 
 [playform]: https://playform.cloud
