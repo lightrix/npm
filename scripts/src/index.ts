@@ -1,10 +1,10 @@
-import { deepmerge } from "deepmerge-ts";
+import { exec } from "child_process";
 import { Command } from "commander";
+import { deepmerge } from "deepmerge-ts";
+import type { BuildOptions, PluginBuild } from "esbuild";
+import esbuild from "esbuild";
 import type { Pattern } from "fast-glob";
 import FastGlob from "fast-glob";
-import esbuild from "esbuild";
-import { exec } from "child_process";
-import type { BuildOptions, PluginBuild } from "esbuild";
 import fs from "fs";
 
 const program = new Command();
