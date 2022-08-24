@@ -1,39 +1,8 @@
-import { exec } from "child_process";
 import { Command } from "commander";
-import { deepmerge } from "deepmerge-ts";
-import type { BuildOptions, PluginBuild } from "esbuild";
-import esbuild from "esbuild";
-import type { Pattern } from "fast-glob";
-import FastGlob from "fast-glob";
-import fs from "fs";
+
+import build from "./lib/build.js";
 
 const program = new Command();
-
-const outDir = "dist";
-
-const config: BuildOptions = {
-	entryPoints: [],
-	format: "esm",
-	minify: true,
-	outdir: outDir,
-	platform: "node",
-	target: "node14",
-	write: true,
-	plugins: [
-		{
-			name: "clean-dist",
-			setup(build: PluginBuild) {
-				build.onStart(async () => {
-					try {
-						await fs.promises.rm(outDir, {
-							recursive: true,
-						});
-					} catch (error) {}
-				});
-			},
-		},
-	],
-};
 
 program
 	.name("playform")
@@ -44,22 +13,6 @@ program
 	.command("build")
 	.description("Build scripts")
 	.argument("<scripts...>", "Scripts to build")
-	.action(async (scripts: Pattern[]) => {
-		let pipe = [];
-
-		for (const glob of scripts) {
-			for (const file of await FastGlob(glob)) {
-				pipe.push(file);
-			}
-		}
-
-		await esbuild.build(
-			deepmerge(config, {
-				entryPoints: pipe,
-			})
-		);
-
-		exec("tsc");
-	});
+	.action(build);
 
 program.parse();

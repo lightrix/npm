@@ -1,0 +1,1 @@
+import{exec as f}from"child_process";import{deepmerge as i}from"deepmerge-ts";import m from"esbuild";import p from"fast-glob";import a from"./../config/esbuild.js";var d=async t=>{let o=[];for(const r of t)for(const e of await p(r))o.push(e);await m.build(i(a,{entryPoints:o})),f("tsc")};export{d as default};
