@@ -2,9 +2,7 @@ import type { BuildOptions, PluginBuild } from "esbuild";
 import fs from "fs";
 
 const outDir = "dist";
-
 export default {
-	entryPoints: [],
 	format: "esm",
 	minify: true,
 	outdir: outDir,
