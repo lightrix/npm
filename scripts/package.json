@@ -5,11 +5,12 @@
 	"description": "Build scripts",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Playform/@playform/scripts.git"
+		"url": "git+https://github.com/Playform/npm.git",
+		"directory": "scripts"
 	},
-	"homepage": "https://github.com/Playform/@playform/scripts#readme",
+	"homepage": "https://github.com/Playform/npm#readme",
 	"bugs": {
-		"url": "https://github.com/Playform/@playform/scripts/issues"
+		"url": "https://github.com/Playform/npm/issues"
 	},
 	"author": "Nikola Hristov <nikola@playform.cloud>",
 	"license": "MIT",

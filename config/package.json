@@ -5,7 +5,8 @@
 	"description": "Build config",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Playform/npm.git"
+		"url": "git+https://github.com/Playform/npm.git",
+		"directory": "config"
 	},
 	"homepage": "https://github.com/Playform/npm#readme",
 	"bugs": {
