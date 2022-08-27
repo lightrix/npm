@@ -1,6 +1,6 @@
 {
 	"name": "@playform/scripts",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"type": "module",
 	"description": "Build scripts",
 	"repository": {
@@ -12,7 +12,7 @@
 		"url": "https://github.com/Playform/@playform/scripts/issues"
 	},
 	"author": "Nikola Hristov <nikola@playform.cloud>",
-	"license": "SEE LICENSE IN LICENSE",
+	"license": "MIT",
 	"bin": {
 		"playform": "./dist/index.js"
 	},
@@ -22,13 +22,13 @@
 		"build": "ts-node src/index.ts build src/**/*.ts"
 	},
 	"devDependencies": {
-		"@playform/config": "0.0.1",
+		"@playform/config": "0.0.2",
 		"@types/node": "18.7.13",
 		"commander": "9.4.0",
 		"deepmerge-ts": "4.2.1",
 		"esbuild": "0.15.5",
 		"fast-glob": "3.2.11",
 		"ts-node": "10.9.1",
-		"typescript": "4.7.4"
+		"typescript": "4.8.2"
 	}
 }

@@ -26,8 +26,8 @@ Setup scripts:
 		"build": "playform build src/*.ts"
 	},
 	"devDependencies": {
-		"@playform/config": "0.0.1",
-		"@playform/scripts": "0.0.2"
+		"@playform/config": "0.0.2",
+		"@playform/scripts": "0.0.3"
 	}
 }
 ```

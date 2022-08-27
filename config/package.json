@@ -1,6 +1,6 @@
 {
 	"name": "@playform/config",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"type": "module",
 	"description": "Build config",
 	"repository": {
@@ -12,5 +12,5 @@
 		"url": "https://github.com/Playform/npm/issues"
 	},
 	"author": "Nikola Hristov <nikola@playform.cloud>",
-	"license": "SEE LICENSE IN LICENSE"
+	"license": "MIT"
 }
