@@ -1,11 +1,11 @@
 {
 	"name": "@playform/config",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"type": "module",
 	"description": "Build config",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Playform/npm.git",
+		"url": "https://github.com/Playform/npm.git",
 		"directory": "config"
 	},
 	"homepage": "https://github.com/Playform/npm#readme",

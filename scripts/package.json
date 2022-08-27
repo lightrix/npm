@@ -1,11 +1,11 @@
 {
 	"name": "@playform/scripts",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"type": "module",
 	"description": "Build scripts",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Playform/npm.git",
+		"url": "https://github.com/Playform/npm.git",
 		"directory": "scripts"
 	},
 	"homepage": "https://github.com/Playform/npm#readme",
@@ -23,7 +23,7 @@
 		"build": "ts-node src/index.ts build src/**/*.ts"
 	},
 	"devDependencies": {
-		"@playform/config": "0.0.2",
+		"@playform/config": "0.0.3",
 		"@types/node": "18.7.13",
 		"commander": "9.4.0",
 		"deepmerge-ts": "4.2.1",
