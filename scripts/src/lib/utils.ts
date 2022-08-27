@@ -1,6 +1,6 @@
+import fs from "fs";
 import { pathToFileURL } from "node:url";
 import ts from "typescript";
-import fs from "fs";
 
 const importFile = async (file: string) => {
 	const ext = file.split(".").pop();

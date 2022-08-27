@@ -1,13 +1,11 @@
-import { deepmerge } from "deepmerge-ts";
 import { exec } from "child_process";
-
+import { deepmerge } from "deepmerge-ts";
 import esbuild from "esbuild";
+import type { Pattern } from "fast-glob";
 import FastGlob from "fast-glob";
 
-import type { Pattern } from "fast-glob";
-
-import utils from "../lib/utils.js";
 import defaultConfig from "../config/esbuild.js";
+import utils from "../lib/utils.js";
 
 export default async (scripts: Pattern[], options?: { config?: string }) => {
 	let pipe = [];
