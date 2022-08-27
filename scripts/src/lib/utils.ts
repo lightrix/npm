@@ -20,6 +20,14 @@ const importFile = async (file: string) => {
 		const host = ts.createCompilerHost(compilerOptions.options);
 		const program = ts.createProgram([file], compilerOptions.options, host);
 		program.emit();
+
+		await fs.promises.writeFile(
+			file.replace(".ts", ".js"),
+			ts.transpile(
+				(await fs.promises.readFile(file)).toString(),
+				compilerOptions.options
+			)
+		);
 	}
 
 	return (await import(pathToFileURL(file).toString().replace(".ts", ".js")))
