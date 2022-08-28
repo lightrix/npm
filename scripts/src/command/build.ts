@@ -5,7 +5,7 @@ import type { Pattern } from "fast-glob";
 import FastGlob from "fast-glob";
 
 import defaultConfig from "../config/esbuild.js";
-import utils from "../lib/utils.js";
+import { importFile } from "../lib/utils.js";
 
 export default async (scripts: Pattern[], options?: { config?: string }) => {
 	let pipe = [];
@@ -16,13 +16,13 @@ export default async (scripts: Pattern[], options?: { config?: string }) => {
 		}
 	}
 
-	const _config = deepmerge(defaultConfig, {
+	const _config = deepmerge(defaultConfig(), {
 		entryPoints: pipe,
 	});
 
 	await esbuild.build(
 		options?.config
-			? deepmerge(_config, await utils.importFile(options.config))
+			? deepmerge(_config, await importFile(options.config))
 			: _config
 	);
 
