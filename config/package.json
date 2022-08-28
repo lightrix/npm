@@ -13,5 +13,8 @@
 		"url": "https://github.com/Playform/npm/issues"
 	},
 	"author": "Nikola Hristov <nikola@playform.cloud>",
-	"license": "MIT"
+	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	}
 }
