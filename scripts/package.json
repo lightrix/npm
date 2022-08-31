@@ -1,21 +1,21 @@
 {
-	"name": "@playform/scripts",
-	"version": "0.0.5",
+	"name": "@lightrix/scripts",
+	"version": "0.0.1",
 	"type": "module",
 	"description": "Build scripts",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Playform/npm.git",
+		"url": "https://github.com/lightrix/npm.git",
 		"directory": "scripts"
 	},
-	"homepage": "https://github.com/Playform/npm#readme",
+	"homepage": "https://github.com/lightrix/npm#readme",
 	"bugs": {
-		"url": "https://github.com/Playform/npm/issues"
+		"url": "https://github.com/lightrix/npm/issues"
 	},
-	"author": "Nikola Hristov <nikola@playform.cloud>",
+	"author": "Nikola Hristov <nikola@lightrix.dev>",
 	"license": "MIT",
 	"bin": {
-		"playform": "./dist/index.js"
+		"lightrix": "./dist/index.js"
 	},
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
@@ -23,7 +23,7 @@
 		"build": "ts-node src/index.ts build src/**/*.ts"
 	},
 	"devDependencies": {
-		"@playform/config": "0.0.3",
+		"@lightrix/config": "0.0.1",
 		"@types/node": "18.7.14",
 		"commander": "9.4.0",
 		"deepmerge-ts": "4.2.1",

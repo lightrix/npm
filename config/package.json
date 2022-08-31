@@ -1,18 +1,18 @@
 {
-	"name": "@playform/config",
-	"version": "0.0.3",
+	"name": "@lightrix/config",
+	"version": "0.0.1",
 	"type": "module",
 	"description": "Build config",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Playform/npm.git",
+		"url": "https://github.com/lightrix/npm.git",
 		"directory": "config"
 	},
-	"homepage": "https://github.com/Playform/npm#readme",
+	"homepage": "https://github.com/lightrix/npm#readme",
 	"bugs": {
-		"url": "https://github.com/Playform/npm/issues"
+		"url": "https://github.com/lightrix/npm/issues"
 	},
-	"author": "Nikola Hristov <nikola@playform.cloud>",
+	"author": "Nikola Hristov <nikola@lightrix.dev>",
 	"license": "MIT",
 	"publishConfig": {
 		"access": "public"

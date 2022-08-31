@@ -1,5 +1,5 @@
-# [Playform configs] 📐
+# [lightrix configs] 📐
 
-Playform configs for esbuild and TypeScript
+lightrix configs for esbuild and TypeScript
 
-[playform configs]: https://npmjs.org/@playform/config
+[lightrix configs]: https://npmjs.org/@lightrix/config

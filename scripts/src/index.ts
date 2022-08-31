@@ -4,10 +4,7 @@ import build from "./command/build.js";
 
 const program = new Command();
 
-program
-	.name("playform")
-	.description("CLI to some JavaScript build scripts")
-	.version("0.0.2");
+program.name("lightrix").description("Build tools").version("0.0.2");
 
 program
 	.command("build")

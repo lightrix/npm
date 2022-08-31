@@ -1,19 +1,19 @@
-# [Playform] build scripts and config
+# [lightrix] build scripts and config
 
 | Repo            | Link                                              | Version                                                                                                                             |
 | --------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| [Configuration] | https://github.com/Playform/npm/tree/main/config  | [![npm (scoped)](https://img.shields.io/npm/v/@playform/config?color=black&label=%20&logo=npm&logoColor=black)][@playform/config]   |
-| [Scripts]       | https://github.com/Playform/npm/tree/main/scripts | [![npm (scoped)](https://img.shields.io/npm/v/@playform/scripts?color=black&label=%20&logo=npm&logoColor=black)][@playform/scripts] |
+| [Configuration] | https://github.com/lightrix/npm/tree/main/config  | [![npm (scoped)](https://img.shields.io/npm/v/@lightrix/config?color=black&label=%20&logo=npm&logoColor=black)][@lightrix/config]   |
+| [Scripts]       | https://github.com/lightrix/npm/tree/main/scripts | [![npm (scoped)](https://img.shields.io/npm/v/@lightrix/scripts?color=black&label=%20&logo=npm&logoColor=black)][@lightrix/scripts] |
 
 ## Installation
 
 Add configs:
 
-`npm install -D -E @playform/config`
+`npm install -D -E @lightrix/config`
 
 Setup scripts:
 
-`npm install -D -E @playform/scripts`
+`npm install -D -E @lightrix/scripts`
 
 ## Usage
 
@@ -23,11 +23,11 @@ Setup scripts:
 {
 	"name": "my-awesome-package",
 	"scripts": {
-		"build": "playform build src/*.ts"
+		"build": "lightrix build src/*.ts"
 	},
 	"devDependencies": {
-		"@playform/config": "0.0.3",
-		"@playform/scripts": "0.0.5"
+		"@lightrix/config": "0.0.1",
+		"@lightrix/scripts": "0.0.1"
 	}
 }
 ```
@@ -37,7 +37,7 @@ or with a custom esbuild config file:
 ```json
 {
 	"scripts": {
-		"build": "playform build src/*.ts -c esbuild.ts"
+		"build": "lightrix build src/*.ts -c esbuild.ts"
 	}
 }
 ```
@@ -48,7 +48,7 @@ See an example of a config file in [esbuild.ts](scripts/src/config/esbuild.ts)
 
 ```json
 {
-	"extends": "@playform/config/tsconfig.json",
+	"extends": "@lightrix/config/tsconfig.json",
 	"include": ["src"],
 	"compilerOptions": {
 		"outDir": "dist"
@@ -56,12 +56,12 @@ See an example of a config file in [esbuild.ts](scripts/src/config/esbuild.ts)
 }
 ```
 
-Playform will automatically compile your scripts with [esbuild] and add
+lightrix will automatically compile your scripts with [esbuild] and add
 TypeScript types.
 
-[@playform/config]: https://npmjs.org/@playform/config
-[@playform/scripts]: https://npmjs.org/@playform/scripts
-[configuration]: https://github.com/Playform/npm/tree/main/config
-[scripts]: https://github.com/Playform/npm/tree/main/scripts
-[playform]: https://playform.cloud
+[@lightrix/config]: https://npmjs.org/@lightrix/config
+[@lightrix/scripts]: https://npmjs.org/@lightrix/scripts
+[configuration]: https://github.com/lightrix/npm/tree/main/config
+[scripts]: https://github.com/lightrix/npm/tree/main/scripts
+[lightrix]: https://lightrix.dev
 [esbuild]: https://npmjs.org/esbuild

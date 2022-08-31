@@ -16,7 +16,7 @@ export const importFile = async (file: string) => {
 			JSON.parse(
 				(
 					await fs.promises.readFile(
-						"node_modules/@playform/config/tsconfig.json"
+						"node_modules/@lightrix/config/tsconfig.json"
 					)
 				).toString()
 			).compilerOptions,

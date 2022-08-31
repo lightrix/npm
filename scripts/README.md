@@ -1,5 +1,5 @@
-# [Playform build scripts] 🏗️
+# [lightrix build scripts] 🏗️
 
-Playform build scripts using esbuild.
+lightrix build scripts using esbuild.
 
-[playform build scripts]: https://npmjs.org/@playform/scripts
+[lightrix build scripts]: https://npmjs.org/@lightrix/scripts
