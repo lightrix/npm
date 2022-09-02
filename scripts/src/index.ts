@@ -4,7 +4,7 @@ import build from "./command/build.js";
 
 const program = new Command();
 
-program.name("lightrix").description("Build tools").version("0.0.2");
+program.name("nikola").description("Build tools").version("0.0.1");
 
 program
 	.command("build")

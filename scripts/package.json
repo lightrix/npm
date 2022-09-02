@@ -1,21 +1,21 @@
 {
-	"name": "@lightrix/scripts",
+	"name": "@nikolarhristov/scripts",
 	"version": "0.0.1",
 	"type": "module",
 	"description": "Build scripts",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/lightrix/npm.git",
+		"url": "https://github.com/NikolaRHristov/npm.git",
 		"directory": "scripts"
 	},
-	"homepage": "https://github.com/lightrix/npm#readme",
+	"homepage": "https://github.com/NikolaRHristov/npm#readme",
 	"bugs": {
-		"url": "https://github.com/lightrix/npm/issues"
+		"url": "https://github.com/NikolaRHristov/npm/issues"
 	},
 	"author": "Nikola Hristov <nikola@lightrix.dev>",
 	"license": "MIT",
 	"bin": {
-		"lightrix": "./dist/index.js"
+		"nikola": "./dist/index.js"
 	},
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
@@ -23,7 +23,7 @@
 		"build": "ts-node src/index.ts build src/**/*.ts"
 	},
 	"devDependencies": {
-		"@lightrix/config": "0.0.1",
+		"@nikolarhristov/config": "0.0.1",
 		"@types/node": "18.7.14",
 		"commander": "9.4.0",
 		"deepmerge-ts": "4.2.1",
