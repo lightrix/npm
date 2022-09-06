@@ -4,9 +4,9 @@
 	"type": "module",
 	"description": "Build scripts",
 	"repository": {
+		"directory": "scripts",
 		"type": "git",
-		"url": "https://github.com/NikolaRHristov/npm.git",
-		"directory": "scripts"
+		"url": "https://github.com/NikolaRHristov/npm.git"
 	},
 	"homepage": "https://github.com/NikolaRHristov/npm#readme",
 	"bugs": {
