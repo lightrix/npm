@@ -24,7 +24,7 @@
 	},
 	"devDependencies": {
 		"@nikolarhristov/config": "0.0.1",
-		"@types/node": "18.7.14",
+		"@types/node": "18.7.15",
 		"commander": "9.4.0",
 		"deepmerge-ts": "4.2.1",
 		"esbuild": "0.15.7",
