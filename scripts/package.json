@@ -24,7 +24,7 @@
 	},
 	"devDependencies": {
 		"@playform/config": "0.0.3",
-		"@types/node": "18.7.15",
+		"@types/node": "18.7.16",
 		"commander": "9.4.0",
 		"deepmerge-ts": "4.2.1",
 		"esbuild": "0.15.7",
