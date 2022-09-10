@@ -2,12 +2,6 @@ import fs from "fs";
 import { pathToFileURL } from "node:url";
 import ts from "typescript";
 
-/**
- * It takes a file path, checks if it's a TypeScript file, if it is, it compiles it to JavaScript, and
- * then imports it
- * @param {string} file - The path to the file to import.
- * @returns The default export of the file.
- */
 export const importFile = async (file: string) => {
 	const ext = file.split(".").pop();
 
@@ -40,8 +34,6 @@ export const importFile = async (file: string) => {
 		.default;
 };
 
-export default () => {
-	return {
-		importFile: importFile,
-	};
-};
+export default () => ({
+	importFile,
+});
