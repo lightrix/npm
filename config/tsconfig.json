@@ -12,9 +12,7 @@
 		"forceConsistentCasingInFileNames": true,
 		"importsNotUsedAsValues": "error",
 		"isolatedModules": true,
-		"lib": [
-			"ESNext"
-		],
+		"lib": ["ESNext"],
 		"module": "esnext",
 		"moduleResolution": "node",
 		"noFallthroughCasesInSwitch": true,
@@ -28,9 +26,7 @@
 		"skipLibCheck": true,
 		"strict": true,
 		"target": "esnext",
-		"types": [
-			"node"
-		]
+		"types": ["node"]
 	},
 	"ts-node": {
 		"esm": true
