@@ -1,6 +1,6 @@
 {
 	"name": "@lightrix/scripts",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"type": "module",
 	"description": "Build scripts",
 	"repository": {
@@ -23,7 +23,7 @@
 		"build": "ts-node src/index.ts build src/**/*.ts"
 	},
 	"devDependencies": {
-		"@lightrix/config": "0.0.1",
+		"@lightrix/config": "0.0.2",
 		"@types/node": "18.7.18",
 		"commander": "9.4.0",
 		"deepmerge-ts": "4.2.1",
