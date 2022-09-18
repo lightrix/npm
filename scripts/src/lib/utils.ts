@@ -10,7 +10,7 @@ export const importFile = async (file: string) => {
 			JSON.parse(
 				(
 					await fs.promises.readFile(
-						"node_modules/@nikolarhristov/config/tsconfig.json"
+						"node_modules/@lightrix/config/tsconfig.json"
 					)
 				).toString()
 			).compilerOptions,

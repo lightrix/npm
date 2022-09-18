@@ -2,4 +2,4 @@
 
 My configs for esbuild and TypeScript
 
-[nikolarhristov configs]: https://npmjs.org/@nikolarhristov/config
+[nikolarhristov configs]: https://npmjs.org/@lightrix/config

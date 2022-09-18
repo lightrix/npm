@@ -2,4 +2,4 @@
 
 My scripts using esbuild.
 
-[nikolarhristov scripts]: https://npmjs.org/@nikolarhristov/scripts
+[nikolarhristov scripts]: https://npmjs.org/@lightrix/scripts

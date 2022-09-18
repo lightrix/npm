@@ -1,16 +1,16 @@
 {
-	"name": "@nikolarhristov/config",
+	"name": "@lightrix/config",
 	"version": "0.0.1",
 	"type": "module",
 	"description": "Build config",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/NikolaRHristov/npm.git",
+		"url": "https://github.com/Lightrix/npm.git",
 		"directory": "config"
 	},
-	"homepage": "https://github.com/NikolaRHristov/npm#readme",
+	"homepage": "https://github.com/Lightrix/npm#readme",
 	"bugs": {
-		"url": "https://github.com/NikolaRHristov/npm/issues"
+		"url": "https://github.com/Lightrix/npm/issues"
 	},
 	"author": "Nikola Hristov <nikola@lightrix.dev>",
 	"license": "MIT",
