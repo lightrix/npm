@@ -1,5 +1,5 @@
-# [NikolaRHristov scripts] 🏗️
+# [Lightrix scripts] 🏗️
 
-My scripts using esbuild.
+Lightrix build scripts using esbuild (for now).
 
-[nikolarhristov scripts]: https://npmjs.org/@lightrix/scripts
+[lightrix scripts]: https://npmjs.org/@lightrix/scripts

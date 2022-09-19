@@ -1,5 +1,5 @@
-# [NikolaRHristov configs] 📐
+# [Lightrix configs] 📐
 
-My configs for esbuild and TypeScript
+Configs for esbuild and TypeScript
 
-[nikolarhristov configs]: https://npmjs.org/@lightrix/config
+[Lightrix configs]: https://npmjs.org/@lightrix/config
