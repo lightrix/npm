@@ -1,7 +1,7 @@
 # My build scripts and config
 
-| Repo            | Link                                                    | Version                                                                                                                                         |
-| --------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Repo            | Link                                              | Version                                                                                                                             |
+| --------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | [Configuration] | https://github.com/Lightrix/npm/tree/main/config  | [![npm (scoped)](https://img.shields.io/npm/v/@lightrix/config?color=black&label=%20&logo=npm&logoColor=black)][@lightrix/config]   |
 | [Scripts]       | https://github.com/Lightrix/npm/tree/main/scripts | [![npm (scoped)](https://img.shields.io/npm/v/@lightrix/scripts?color=black&label=%20&logo=npm&logoColor=black)][@lightrix/scripts] |
 

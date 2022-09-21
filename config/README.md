@@ -2,4 +2,4 @@
 
 Configs for esbuild and TypeScript
 
-[Lightrix configs]: https://npmjs.org/@lightrix/config
+[lightrix configs]: https://npmjs.org/@lightrix/config
