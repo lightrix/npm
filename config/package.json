@@ -12,7 +12,7 @@
 	"bugs": {
 		"url": "https://github.com/Lightrix/npm/issues"
 	},
-	"author": "Nikola Hristov <nikola@lightrix.dev>",
+	"author": "NIKOLAHRISTOV",
 	"license": "MIT",
 	"publishConfig": {
 		"access": "public"
