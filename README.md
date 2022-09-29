@@ -1,4 +1,4 @@
-# My build scripts and config
+# [Lightrix] build scripts and config
 
 | Repo            | Link                                              | Version                                                                                                                             |
 | --------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
@@ -63,4 +63,5 @@ TypeScript types.
 [@lightrix/scripts]: https://npmjs.org/@lightrix/scripts
 [configuration]: https://github.com/Lightrix/npm/tree/main/config
 [scripts]: https://github.com/Lightrix/npm/tree/main/scripts
+[lightrix]: https://lightrix.dev
 [esbuild]: https://npmjs.org/esbuild
