@@ -12,7 +12,7 @@
 	"bugs": {
 		"url": "https://github.com/Playform/npm/issues"
 	},
-	"author": "Nikola R. Hristov <nikola@lightrix.help>",
+	"author": "Nikola R. Hristov <nikola@nikolahristov.tech>",
 	"license": "MIT",
 	"bin": {
 		"playform": "./dist/index.js"
