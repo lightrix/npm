@@ -63,5 +63,5 @@ TypeScript types.
 [@lightrix/scripts]: https://npmjs.org/@lightrix/scripts
 [configuration]: https://github.com/Lightrix/npm/tree/main/config
 [scripts]: https://github.com/Lightrix/npm/tree/main/scripts
-[lightrix]: https://lightrix.dev
+[lightrix]: https://lightrix.help
 [esbuild]: https://npmjs.org/esbuild
