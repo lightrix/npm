@@ -40,8 +40,6 @@ export const importFile = async (file: string) => {
 		.default;
 };
 
-export default () => {
-	return {
-		importFile: importFile,
-	};
+export default {
+	importFile,
 };

@@ -12,7 +12,7 @@
 	"bugs": {
 		"url": "https://github.com/Playform/npm/issues"
 	},
-	"author": "Nikola R. Hristov <nikola@nikolahristov.tech>",
+	"author": "Nikola Hristov <nikola@nikolahristov.tech>",
 	"license": "MIT",
 	"bin": {
 		"playform": "./dist/index.js"
@@ -24,7 +24,7 @@
 	},
 	"devDependencies": {
 		"@playform/config": "0.0.3",
-		"@types/node": "18.7.23",
+		"@types/node": "18.8.0",
 		"commander": "9.4.1",
 		"deepmerge-ts": "4.2.2",
 		"esbuild": "0.15.10",

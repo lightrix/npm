@@ -3,9 +3,8 @@ import fs from "fs";
 
 const outDir = "dist";
 
-export default (): BuildOptions => {
-	return {
-		format: "esm",
+export default {
+	format: "esm",
 		minify: true,
 		outdir: outDir,
 		platform: "node",
@@ -14,6 +13,8 @@ export default (): BuildOptions => {
 		plugins: [
 			{
 				name: "clean-dist",
+
+
 				setup(build: PluginBuild) {
 					build.onStart(async () => {
 						try {
@@ -25,5 +26,6 @@ export default (): BuildOptions => {
 				},
 			},
 		],
-	};
-};
+
+
+} satisfies BuildOptions;
