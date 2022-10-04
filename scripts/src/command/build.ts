@@ -16,7 +16,7 @@ export default async (scripts: Pattern[], options?: { config?: string }) => {
 		}
 	}
 
-	const _config = deepmerge(defaultConfig(), {
+	const _config = deepmerge(await defaultConfig(), {
 		entryPoints: pipe,
 	});
 

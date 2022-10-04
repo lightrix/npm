@@ -3,7 +3,7 @@ import fs from "fs";
 
 const outDir = "dist";
 
-export default {
+export default async (): Promise<BuildOptions> => ({
 	format: "esm",
 	minify: true,
 	outdir: outDir,
@@ -24,4 +24,4 @@ export default {
 			},
 		},
 	],
-} satisfies BuildOptions;
+});
