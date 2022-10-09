@@ -12,8 +12,6 @@
 	"bugs": {
 		"url": "https://github.com/Lightrix/npm/issues"
 	},
-	"author": "nikolaxhristov",
-	"license": "MIT",
 	"bin": {
 		"lightrix": "./dist/index.js"
 	},

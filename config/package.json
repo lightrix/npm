@@ -4,16 +4,14 @@
 	"type": "module",
 	"description": "Build config",
 	"repository": {
+		"directory": "config",
 		"type": "git",
-		"url": "https://github.com/Lightrix/npm.git",
-		"directory": "config"
+		"url": "https://github.com/Lightrix/npm.git"
 	},
 	"homepage": "https://github.com/Lightrix/npm#readme",
 	"bugs": {
 		"url": "https://github.com/Lightrix/npm/issues"
 	},
-	"author": "nikolaxhristov",
-	"license": "MIT",
 	"publishConfig": {
 		"access": "public"
 	}

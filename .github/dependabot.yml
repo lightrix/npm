@@ -1,12 +1,7 @@
 version: 2
 updates:
     - package-ecosystem: "npm"
-      directory: "/config"
-      schedule:
-          interval: "daily"
-      versioning-strategy: increase
-    - package-ecosystem: "npm"
-      directory: "/scripts"
+      directory: "/"
       schedule:
           interval: "daily"
       versioning-strategy: increase
