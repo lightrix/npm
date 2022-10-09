@@ -12,8 +12,6 @@
 	"bugs": {
 		"url": "https://github.com/Playform/npm/issues"
 	},
-	"author": "nikolaxhristov",
-	"license": "MIT",
 	"publishConfig": {
 		"access": "public"
 	}
