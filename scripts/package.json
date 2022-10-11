@@ -1,6 +1,6 @@
 {
 	"name": "@lightrix/scripts",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"type": "module",
 	"description": "Build scripts",
 	"repository": {
@@ -24,7 +24,7 @@
 		"commander": "9.4.1"
 	},
 	"devDependencies": {
-		"@lightrix/config": "0.0.2",
+		"@lightrix/config": "0.0.3",
 		"@types/node": "18.8.4",
 		"deepmerge-ts": "4.2.2",
 		"esbuild": "0.15.10",
