@@ -21,7 +21,7 @@
 		"build": "ts-node src/index.ts build src/**/*.ts"
 	},
 	"devDependencies": {
-		"@lightrix/config": "0.0.2",
+		"@lightrix/config": "0.0.3",
 		"@playform/config": "0.0.3",
 		"@types/node": "18.8.4",
 		"commander": "9.4.1",
