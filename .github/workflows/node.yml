@@ -34,12 +34,12 @@ jobs:
                   cache: "pnpm"
 
 
-            - run: pnpm install --frozen-lockfile
+            - run: pnpm install
               working-directory: /config/
             - run: pnpm run build --if-present
               working-directory: /config/
 
-            - run: pnpm install --frozen-lockfile
+            - run: pnpm install
               working-directory: /scripts/
             - run: pnpm run build --if-present
               working-directory: /scripts/
