@@ -1,6 +1,6 @@
 {
 	"name": "@playform/scripts",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"type": "module",
 	"description": "Build scripts",
 	"repository": {
@@ -20,11 +20,12 @@
 	"scripts": {
 		"build": "ts-node src/index.ts build src/**/*.ts"
 	},
+	"dependencies": {
+		"commander": "9.4.1"
+	},
 	"devDependencies": {
-		"@lightrix/config": "0.0.3",
-		"@playform/config": "0.0.3",
+		"@playform/config": "0.0.4",
 		"@types/node": "18.8.4",
-		"commander": "9.4.1",
 		"deepmerge-ts": "4.2.2",
 		"esbuild": "0.15.10",
 		"fast-glob": "3.2.12",
