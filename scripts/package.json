@@ -25,7 +25,7 @@
 	},
 	"devDependencies": {
 		"@lightrix/config": "0.0.3",
-		"@types/node": "18.8.4",
+		"@types/node": "18.8.5",
 		"deepmerge-ts": "4.2.2",
 		"esbuild": "0.15.10",
 		"fast-glob": "3.2.12",
