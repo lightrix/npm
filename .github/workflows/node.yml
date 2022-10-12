@@ -21,12 +21,19 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
+                  cache-dependency-path: |
+                      '**/pnpm-lock.yaml'
+                      '**/package-lock.json'
+
 
             - run: pnpm install --frozen-lockfile
-              working-directory: /config
+              working-directory: /config/
             - run: pnpm run build --if-present
-              working-directory: /config
+              working-directory: /config/
+
+
             - run: pnpm install --frozen-lockfile
-              working-directory: /scripts
+              working-directory: /scripts/
             - run: pnpm run build --if-present
-              working-directory: /scripts
+              working-directory: /scripts/
+
