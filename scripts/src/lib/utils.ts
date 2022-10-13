@@ -1,6 +1,11 @@
 import fs from "fs";
 import { pathToFileURL } from "node:url";
+import { dirname, resolve } from "path";
 import ts from "typescript";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export const importFile = async (file: string) => {
 	const ext = file.split(".").pop();
@@ -10,7 +15,9 @@ export const importFile = async (file: string) => {
 			JSON.parse(
 				(
 					await fs.promises.readFile(
-						"node_modules/@lightrix/config/tsconfig.json"
+						resolve(
+							`${__dirname}/../../node_modules/@lightrix/config/tsconfig.json`
+						)
 					)
 				).toString()
 			).compilerOptions,
