@@ -31,7 +31,8 @@ jobs:
                           --unsafe-perm=true,
                           --lockfile-only
                         ]
-                  dest: ./config
+            - run: pnpm install
+              working-directory: ./config
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
@@ -39,8 +40,6 @@ jobs:
                   cache-dependency-path: |
                       ./config/pnpm-lock.yaml
                   working-directory: ./config
-            - run: pnpm install
-              working-directory: ./config
             - run: pnpm run build
               working-directory: ./config
 
@@ -58,7 +57,8 @@ jobs:
                           --unsafe-perm=true,
                           --lockfile-only
                         ]
-                  dest: ./scripts
+            - run: pnpm install
+              working-directory: ./scripts
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
@@ -66,7 +66,5 @@ jobs:
                   cache-dependency-path: |
                       ./scripts/pnpm-lock.yaml
                   working-directory: ./scripts
-            - run: pnpm install
-              working-directory: ./scripts
             - run: pnpm run build
               working-directory: ./scripts
