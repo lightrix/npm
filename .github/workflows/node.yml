@@ -36,8 +36,7 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
                   cache-dependency-path: |
-                      **/pnpm-lock.yaml
-                  working-directory: ./config
+                      ./config/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./config
             - run: pnpm run build
@@ -62,8 +61,7 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
                   cache-dependency-path: |
-                      **/pnpm-lock.yaml
-                  working-directory: ./scripts
+                      ./scripts/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./scripts
             - run: pnpm run build
