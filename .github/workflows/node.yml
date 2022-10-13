@@ -14,6 +14,9 @@ jobs:
 
         steps:
             - uses: actions/checkout@v3.1.0
+
+
+
             - uses: pnpm/action-setup@v2.2.3
               with:
                   version: 7.13.4
@@ -26,22 +29,43 @@ jobs:
                           --prefer-frozen-lockfile=false,
                           --strict-peer-dependencies=false,
                           --unsafe-perm=true,
-                          --lockfile-only,
-                          --shared-workspace-lockfile=true
+                          --lockfile-only
                         ]
+                  working-directory: ./config
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
                   cache-dependency-path: |
-                      **/pnpm-lock.yaml
-
-
+                      ./config/pnpm-lock.yaml
+                  working-directory: ./config
             - run: pnpm install
               working-directory: ./config
             - run: pnpm run build
               working-directory: ./config
 
+            - uses: pnpm/action-setup@v2.2.3
+              with:
+                  version: 7.13.4
+                  run_install: |
+                      - recursive: true
+                        args: [
+                          --shamefully-hoist=true,
+                          --child-concurrency=9999,
+                          --network-concurrency=9999,
+                          --prefer-frozen-lockfile=false,
+                          --strict-peer-dependencies=false,
+                          --unsafe-perm=true,
+                          --lockfile-only
+                        ]
+                  working-directory: ./scripts
+            - uses: actions/setup-node@v3.5.0
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: "pnpm"
+                  cache-dependency-path: |
+                      ./scripts/pnpm-lock.yaml
+                  working-directory: ./scripts
             - run: pnpm install
               working-directory: ./scripts
             - run: pnpm run build
