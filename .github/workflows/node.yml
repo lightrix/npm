@@ -35,11 +35,11 @@ jobs:
 
 
             - run: pnpm install
-              working-directory: /config/
+              working-directory: ./config
             - run: pnpm run build --if-present
-              working-directory: /config/
+              working-directory: ./config
 
             - run: pnpm install
-              working-directory: /scripts/
+              working-directory: ./scripts
             - run: pnpm run build --if-present
-              working-directory: /scripts/
+              working-directory: ./scripts
