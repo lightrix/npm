@@ -4,13 +4,16 @@
 	"type": "module",
 	"description": "Build config",
 	"repository": {
+		"directory": "config",
 		"type": "git",
-		"url": "https://github.com/Playform/npm.git",
-		"directory": "config"
+		"url": "https://github.com/Playform/npm.git"
 	},
 	"homepage": "https://github.com/Playform/npm#readme",
 	"bugs": {
 		"url": "https://github.com/Playform/npm/issues"
+	},
+	"exports": {
+		"tsconfig.json": "./tsconfig.json"
 	},
 	"publishConfig": {
 		"access": "public"
