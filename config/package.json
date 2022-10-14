@@ -1,6 +1,6 @@
 {
 	"name": "@lightrix/config",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"type": "module",
 	"description": "Build config",
 	"repository": {
@@ -11,6 +11,9 @@
 	"homepage": "https://github.com/Lightrix/npm#readme",
 	"bugs": {
 		"url": "https://github.com/Lightrix/npm/issues"
+	},
+	"exports": {
+		"tsconfig.json": "./tsconfig.json"
 	},
 	"publishConfig": {
 		"access": "public"
