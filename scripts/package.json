@@ -22,7 +22,7 @@
 		"lightrix": "ts-node src/index.ts"
 	},
 	"dependencies": {
-		"@lightrix/config": "0.0.3",
+		"@lightrix/config": "workspace:0.0.3",
 		"commander": "9.4.1",
 		"deepmerge-ts": "4.2.2",
 		"esbuild": "0.15.10",
