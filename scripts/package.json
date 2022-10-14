@@ -18,7 +18,8 @@
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"scripts": {
-		"build": "ts-node src/index.ts build src/**/*.ts"
+		"build": "ts-node src/index.ts build src/**/*.ts",
+		"playform": "ts-node src/index.ts"
 	},
 	"dependencies": {
 		"@playform/config": "0.0.4",
