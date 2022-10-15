@@ -1,6 +1,6 @@
 {
 	"name": "@playform/config",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"type": "module",
 	"description": "Build config",
 	"repository": {
@@ -11,9 +11,6 @@
 	"homepage": "https://github.com/Playform/npm#readme",
 	"bugs": {
 		"url": "https://github.com/Playform/npm/issues"
-	},
-	"exports": {
-		"tsconfig.json": "./tsconfig.json"
 	},
 	"publishConfig": {
 		"access": "public"

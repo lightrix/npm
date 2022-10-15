@@ -22,7 +22,7 @@ export const importFile = async (file: string) => {
 				(
 					await fs.promises.readFile(
 						resolve(
-							`${__dirname}/../../node_modules/@playform/config/tsconfig.json`
+							`${__dirname}/../../node_modules/@playform/config/base/ts.json`
 						)
 					)
 				).toString()

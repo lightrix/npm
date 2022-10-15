@@ -48,7 +48,7 @@ See an example of a config file in [esbuild.ts](scripts/src/config/esbuild.ts)
 
 ```json
 {
-	"extends": "@playform/config/tsconfig.json",
+	"extends": "@playform/config/base/ts",
 	"include": ["src"],
 	"compilerOptions": {
 		"outDir": "dist"
