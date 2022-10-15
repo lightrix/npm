@@ -4,11 +4,14 @@ updates:
       directory: "/"
       schedule:
           interval: "daily"
+
     - package-ecosystem: "npm"
       directory: "/config"
       schedule:
           interval: "daily"
-      versioning-strategy: increase    - package-ecosystem: "npm"
+      versioning-strategy: increase
+
+    - package-ecosystem: "npm"
       directory: "/scripts"
       schedule:
           interval: "daily"
