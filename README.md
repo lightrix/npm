@@ -48,7 +48,7 @@ See an example of a config file in [esbuild.ts](scripts/src/config/esbuild.ts)
 
 ```json
 {
-	"extends": "@lightrix/config/tsconfig.json",
+	"extends": "@lightrix/config/base/ts",
 	"include": ["src"],
 	"compilerOptions": {
 		"outDir": "dist"

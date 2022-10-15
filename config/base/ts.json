@@ -13,8 +13,8 @@
 		"importsNotUsedAsValues": "error",
 		"isolatedModules": true,
 		"lib": ["ESNext"],
-		"module": "esnext",
-		"moduleResolution": "node",
+		"module": "ESNext",
+		"moduleResolution": "NodeNext",
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitOverride": true,
 		"noImplicitReturns": true,
@@ -25,7 +25,7 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"strict": true,
-		"target": "esnext",
+		"target": "ESNext",
 		"types": ["node"]
 	},
 	"ts-node": {

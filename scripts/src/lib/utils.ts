@@ -16,7 +16,7 @@ export const importFile = async (file: string) => {
 				(
 					await fs.promises.readFile(
 						resolve(
-							`${__dirname}/../../node_modules/@lightrix/config/tsconfig.json`
+							`${__dirname}/../../node_modules/@lightrix/config/base/ts.json`
 						)
 					)
 				).toString()
