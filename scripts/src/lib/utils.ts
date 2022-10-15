@@ -7,6 +7,12 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+/**
+ * It takes a file path, checks if it's a TypeScript file, and if it is, it compiles it to JavaScript
+ * and then imports it
+ * @param {string} file - The file to import.
+ * @returns The default export of the file.
+ */
 export const importFile = async (file: string) => {
 	const ext = file.split(".").pop();
 
@@ -41,6 +47,4 @@ export const importFile = async (file: string) => {
 		.default;
 };
 
-export default () => ({
-	importFile,
-});
+export default () => ({ importFile });
