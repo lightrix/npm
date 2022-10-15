@@ -4,10 +4,7 @@ import build from "./command/build.js";
 
 const program = new Command();
 
-program
-	.name("playform")
-	.description("CLI to some JavaScript build scripts")
-	.version("0.0.2");
+program.name("playform").description("Build tools").version("0.0.8");
 
 program
 	.command("build")
