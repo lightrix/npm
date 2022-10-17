@@ -7,7 +7,9 @@ import FastGlob from "fast-glob";
 // import defaultConfig from "../config/esbuild.js";
 // import { importFile } from "../lib/utils.js";
 
-export default async (scripts: Pattern[]/*, options?: { config?: string }*/) => {
+export default async (
+	scripts: Pattern[] /*, options?: { config?: string }*/
+) => {
 	let pipe = [];
 
 	for (const glob of scripts) {

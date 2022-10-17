@@ -1,3 +1,1 @@
-export default async () => Promise<T> ({
-
-})
+export default async () => Promise<T>({});
