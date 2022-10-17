@@ -12,6 +12,9 @@
 	"bugs": {
 		"url": "https://github.com/Playform/npm/issues"
 	},
+	"devDependencies": {
+		"@lightrix/config": "0.0.5"
+	},
 	"publishConfig": {
 		"access": "public"
 	}
