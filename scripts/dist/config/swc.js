@@ -1,1 +1,2 @@
-var e=async()=>Promise({});export{e as default};
+var e=async()=>Promise({});export { e as default };
+
