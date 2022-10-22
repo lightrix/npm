@@ -1,9 +1,9 @@
-import type { BuildOptions, PluginBuild } from "esbuild";
+import type { PluginBuild } from "esbuild";
 import fs from "fs";
 
 const outDir = "dist";
 
-export default async (): Promise<BuildOptions> => ({
+export default {
 	format: "esm",
 	minify: true,
 	outdir: outDir,
@@ -24,4 +24,4 @@ export default async (): Promise<BuildOptions> => ({
 			},
 		},
 	],
-});
+};
