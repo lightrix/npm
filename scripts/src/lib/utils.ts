@@ -5,7 +5,6 @@ import ts from "typescript";
 import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
-// const __dirname = dirname(__filename);
 
 /**
  * It takes a file path, checks if it's a TypeScript file, if it is, it compiles it to JavaScript, and
@@ -21,9 +20,7 @@ export const importFile = async (file: string) => {
 			JSON.parse(
 				(
 					await fs.promises.readFile(
-						`${dirname(
-							__filename
-						)}/../../node_modules/@lightrix/config/base/ts.json`
+						`${dirname(__filename)}/../../../config/base/ts.json`
 					)
 				).toString()
 			).compilerOptions,
