@@ -1,10 +1,7 @@
 import fs from "fs";
 import { pathToFileURL } from "node:url";
-import { dirname } from "path";
 import ts from "typescript";
-import { fileURLToPath } from "url";
-
-const __filename = fileURLToPath(import.meta.url);
+import getJson from "./getJson.js";
 
 /**
  * It takes a file path, checks if it's a TypeScript file, if it is, it compiles it to JavaScript, and
@@ -17,13 +14,7 @@ export const importFile = async (file: string) => {
 
 	if (ext == "ts") {
 		const compilerOptions = ts.convertCompilerOptionsFromJson(
-			JSON.parse(
-				(
-					await fs.promises.readFile(
-						`${dirname(__filename)}/../../../config/base/ts.json`
-					)
-				).toString()
-			).compilerOptions,
+			(await getJson(`/../../../config/base/ts.json`))?.compilerOptions,
 			"."
 		);
 

@@ -2,10 +2,13 @@ import { Command } from "commander";
 
 import buildSwc from "./command/build-swc.js";
 import build from "./command/build.js";
+import getJson from "./lib/getJson.js";
 
 const program = new Command();
 
-program.name("lightrix").description("Build tools").version("0.0.8");
+getJson(`/../../package.json`).then((json) => {
+	program.name("lightrix").description("Build tools").version(json.version);
+});
 
 program
 	.command("build")

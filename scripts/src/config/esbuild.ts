@@ -8,7 +8,7 @@ export default {
 	minify: true,
 	outdir: outDir,
 	platform: "node",
-	target: "node14",
+	target: "esnext",
 	write: true,
 	plugins: [
 		{
