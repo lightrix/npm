@@ -1,0 +1,35 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"allowJs": true,
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"checkJs": true,
+		"declaration": true,
+		"emitDeclarationOnly": true,
+		"esModuleInterop": true,
+		"exactOptionalPropertyTypes": true,
+		"forceConsistentCasingInFileNames": true,
+		"importsNotUsedAsValues": "error",
+		"isolatedModules": true,
+		"lib": ["ESNext"],
+		"module": "ESNext",
+		"moduleResolution": "NodeNext",
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "ESNext",
+		"types": ["node"],
+		"jsx": "preserve"
+	},
+	"ts-node": {
+		"esm": true
+	}
+}
