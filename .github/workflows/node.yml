@@ -45,5 +45,5 @@ jobs:
               working-directory: ./scripts
             - uses: actions/upload-artifact@v3.1.1
               with:
-                  name: -scripts-node-${{ matrix.node-version }}-dist
+                  name: .-scripts-node-${{ matrix.node-version }}-dist
                   path: ./scripts/dist
