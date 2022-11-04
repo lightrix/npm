@@ -12,9 +12,9 @@ import getJson from "./getJson.js";
 export const importFile = async (file: string) => {
 	const ext = file.split(".").pop();
 
-	if (ext == "ts") {
+	if (ext === "ts") {
 		const compilerOptions = ts.convertCompilerOptionsFromJson(
-			(await getJson(`/../../../config/base/ts.json`))?.compilerOptions,
+			(await getJson("/../../../config/base/ts.json"))?.compilerOptions,
 			"."
 		);
 

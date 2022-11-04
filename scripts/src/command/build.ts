@@ -7,7 +7,10 @@ import FastGlob from "fast-glob";
 import defaultConfig from "../config/esbuild.js";
 import { importFile } from "../lib/utils.js";
 
-export default async (scripts: Pattern[], options?: { config?: string }) => {
+export default async (
+	scripts: Pattern[],
+	options?: { config?: string; tsconfig?: string }
+) => {
 	let pipe = [];
 
 	for (const glob of scripts) {
@@ -26,5 +29,9 @@ export default async (scripts: Pattern[], options?: { config?: string }) => {
 			: _config
 	);
 
-	exec("tsc");
+	if (options?.tsconfig) {
+		exec(`tsc -p ${options?.tsconfig}`);
+	} else {
+		exec("tsc");
+	}
 };

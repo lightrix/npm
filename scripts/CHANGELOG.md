@@ -1,3 +1,7 @@
+## 0.0.14
+
+-   Added custom tsconfig
+
 ## 0.0.13
 
 -   Cleanup
