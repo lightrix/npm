@@ -15,7 +15,11 @@
 	"bin": {
 		"lightrix": "./dist/index.js"
 	},
+	"engines": {
+		"node": ">=14.21.0"
+	},
 	"main": "./dist/index.js",
+	"exports": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"scripts": {
 		"build": "ts-node src/index.ts build src/**/*.ts",
