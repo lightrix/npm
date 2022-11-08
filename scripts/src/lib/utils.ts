@@ -1,4 +1,4 @@
-import fs from "fs";
+import * as fs from "fs";
 import { pathToFileURL } from "node:url";
 import ts from "typescript";
 import getJson from "./getJson.js";

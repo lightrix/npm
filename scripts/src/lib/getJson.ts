@@ -1,4 +1,4 @@
-import fs from "fs";
+import * as fs from "fs";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 
