@@ -19,7 +19,7 @@ export default {
 						await fs.promises.rm(outDir, {
 							recursive: true,
 						});
-					} catch (error) {}
+					} catch (_error) {}
 				});
 			},
 		},
