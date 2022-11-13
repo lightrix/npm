@@ -3,7 +3,6 @@
 	"version": "0.0.6",
 	"type": "module",
 	"description": "Build config",
-	"license": "MIT",
 	"repository": {
 		"directory": "config",
 		"type": "git",
@@ -13,6 +12,7 @@
 	"bugs": {
 		"url": "https://github.com/Lightrix/npm/issues"
 	},
+	"license": "MIT",
 	"private": false,
 	"publishConfig": {
 		"access": "public"
