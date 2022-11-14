@@ -6,7 +6,9 @@ const __filename = fileURLToPath(import.meta.url);
 
 const getJson = async (glob: string) =>
 	JSON.parse(
-		(await fs.promises.readFile(`${dirname(__filename)}${glob}`)).toString()
+		(
+			await fs.promises.readFile(`${dirname(__filename)}${glob}`, "utf-8")
+		).toString()
 	);
 
 export default getJson;

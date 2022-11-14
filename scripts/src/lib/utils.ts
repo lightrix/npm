@@ -25,7 +25,7 @@ export const importFile = async (file: string) => {
 		await fs.promises.writeFile(
 			file.replace(".ts", ".js"),
 			ts.transpile(
-				(await fs.promises.readFile(file)).toString(),
+				(await fs.promises.readFile(file, "utf-8")).toString(),
 				compilerOptions.options
 			)
 		);
