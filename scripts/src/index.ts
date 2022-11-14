@@ -1,6 +1,5 @@
 import { Command } from "commander";
 
-import buildSwc from "./command/build-swc.js";
 import build from "./command/build.js";
 import getJson from "./lib/getJson.js";
 
@@ -17,12 +16,5 @@ program
 	.option("-c, --config <file>", "ESBuild config file")
 	.option("-ts, --tsconfig <file>", "TSConfig build file")
 	.action(build);
-
-program
-	.command("build:swc")
-	.description("Build scripts (with swc")
-	.argument("<scripts...>", "Scripts to build")
-	.option("-c, --config <file>", "SWC config file")
-	.action(buildSwc);
 
 program.parse();
