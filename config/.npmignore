@@ -1,1 +1,6 @@
-
+.github/
+.turbo/
+.super/
+src/
+docs/
+public/
