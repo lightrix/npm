@@ -1,4 +1,4 @@
-import type { PluginBuild } from "esbuild";
+import type { BuildOptions, PluginBuild } from "esbuild";
 import * as fs from "fs";
 
 const outDir = "dist";
@@ -24,4 +24,4 @@ export default {
 			},
 		},
 	],
-};
+} satisfies BuildOptions;
