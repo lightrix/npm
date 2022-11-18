@@ -3,7 +3,7 @@ import * as fs from "fs";
 
 const outDir = "dist";
 
-export default {
+const options: BuildOptions = {
 	format: "esm",
 	minify: true,
 	outdir: outDir,
@@ -25,3 +25,5 @@ export default {
 		},
 	],
 };
+
+export default options;

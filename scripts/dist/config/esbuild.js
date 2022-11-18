@@ -1,1 +1,1 @@
-import*as r from"fs";const t="dist";var s={format:"esm",minify:!0,outdir:t,platform:"node",target:"esnext",write:!0,plugins:[{name:"clean-dist",setup(i){i.onStart(async()=>{try{await r.promises.rm(t,{recursive:!0})}catch{}})}}]};export{s as default};
+import*as r from"fs";const t="dist",e={format:"esm",minify:!0,outdir:t,platform:"node",target:"esnext",write:!0,plugins:[{name:"clean-dist",setup(i){i.onStart(async()=>{try{await r.promises.rm(t,{recursive:!0})}catch{}})}}]};var s=e;export{s as default};
