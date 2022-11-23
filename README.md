@@ -26,8 +26,8 @@ Setup scripts:
 		"build": "lightrix build src/*.ts"
 	},
 	"devDependencies": {
-		"@lightrix/config": "0.0.5",
-		"@lightrix/scripts": "0.0.12"
+		"@lightrix/config": "0.0.6",
+		"@lightrix/scripts": "0.0.17"
 	}
 }
 ```
