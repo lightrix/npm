@@ -27,7 +27,7 @@ Setup scripts:
 	},
 	"devDependencies": {
 		"@lightrix/config": "0.0.6",
-		"@lightrix/scripts": "0.0.17"
+		"@lightrix/scripts": "0.0.18"
 	}
 }
 ```

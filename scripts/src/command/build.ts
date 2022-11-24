@@ -1,6 +1,6 @@
 import { exec } from "child_process";
 import { deepmerge } from "deepmerge-ts";
-import esbuild from "esbuild";
+import esbuild, { BuildOptions } from "esbuild";
 import type { Pattern } from "fast-glob";
 import FastGlob from "fast-glob";
 
@@ -20,8 +20,13 @@ export default async (
 	}
 
 	const _config = deepmerge(defaultConfig, {
-		entryPoints: pipe,
-	});
+		entryPoints: Object.fromEntries(
+			pipe.map((file) => [
+				file.replace("src/", "").split(".").slice(0, -1).join(),
+				file,
+			])
+		),
+	} satisfies BuildOptions);
 
 	await esbuild.build(
 		options?.config
