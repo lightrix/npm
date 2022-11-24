@@ -22,7 +22,7 @@ export default async (
 	const _config = deepmerge(defaultConfig, {
 		entryPoints: Object.fromEntries(
 			pipe.map((file) => [
-				file.replace("src/", "").split(".").slice(0, -1).join(),
+				file.replace("src/", "").split(".").slice(0, -1).join("."),
 				file,
 			])
 		),
