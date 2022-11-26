@@ -56,8 +56,8 @@ See an example of a config file in [esbuild.ts](scripts/src/config/esbuild.ts)
 }
 ```
 
-The script will automatically compile your build files with [esbuild] and add
-TypeScript types.
+The script will now automatically compile your build files with [esbuild] and
+add TypeScript types.
 
 [@lightrix/config]: https://npmjs.org/@lightrix/config
 [@lightrix/scripts]: https://npmjs.org/@lightrix/scripts
