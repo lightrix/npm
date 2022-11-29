@@ -4,8 +4,8 @@ import esbuild, { BuildOptions } from "esbuild";
 import type { Pattern } from "fast-glob";
 import FastGlob from "fast-glob";
 
-import defaultConfig from "./../config/esbuild.js";
-import { importFile } from "./../lib/utils.js";
+import defaultConfig from "../config/esbuild.js";
+import { importFile } from "../lib/utils.js";
 
 export default async (
 	scripts: Pattern[],
