@@ -23,8 +23,5 @@ export default {
 				});
 			},
 		},
-
-
-
 	],
 } satisfies BuildOptions;
