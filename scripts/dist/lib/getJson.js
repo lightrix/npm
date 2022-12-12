@@ -1,1 +1,1 @@
-import*as t from"fs";import{dirname as i}from"path";import{fileURLToPath as o}from"url";const a=o(import.meta.url);var f=async r=>JSON.parse((await t.promises.readFile(`${i(a)}${r}`,"utf-8")).toString());export{f as default};
+import*as t from"fs";import{dirname as i}from"path";import{fileURLToPath as o}from"url";var e=async r=>JSON.parse((await t.promises.readFile(`${i(o(import.meta.url))}${r}`,"utf-8")).toString());export{e as default};
