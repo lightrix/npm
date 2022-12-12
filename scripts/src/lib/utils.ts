@@ -18,9 +18,11 @@ export const importFile = async (file: string) => {
 			"."
 		);
 
-		const host = ts.createCompilerHost(compilerOptions.options);
-		const program = ts.createProgram([file], compilerOptions.options, host);
-		program.emit();
+		ts.createProgram(
+			[file],
+			compilerOptions.options,
+			ts.createCompilerHost(compilerOptions.options)
+		).emit();
 
 		await fs.promises.writeFile(
 			file.replace(".ts", ".js"),

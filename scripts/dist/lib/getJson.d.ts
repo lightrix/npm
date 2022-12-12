@@ -1,2 +1,2 @@
-declare const getJson: (glob: string) => Promise<any>;
-export default getJson;
+declare const _default: (glob: string) => Promise<any>;
+export default _default;
