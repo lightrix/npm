@@ -11,7 +11,7 @@ export default async (
 	scripts: Pattern[],
 	options?: { config?: string; tsconfig?: string }
 ) => {
-	let pipe = [];
+	const pipe = [];
 
 	for (const glob of scripts) {
 		for (const file of await FastGlob(glob)) {
@@ -22,7 +22,7 @@ export default async (
 	const _config = deepmerge(defaultConfig, {
 		entryPoints: Object.fromEntries(
 			pipe.map((file) => [
-				file.replace("src/", "").split(".").slice(0, -1).join("."),
+				file.replace("src/", "").split(".").slice(0, -1.0).join("."),
 				file,
 			])
 		),
