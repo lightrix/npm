@@ -1,3 +1,7 @@
+## 0.0.7
+
+-   Introduce a few more checkups
+
 ## 0.0.6
 
 -   Cleanup
