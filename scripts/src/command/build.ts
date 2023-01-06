@@ -1,8 +1,10 @@
 import { exec } from "child_process";
 import { deepmerge } from "deepmerge-ts";
-import esbuild, { BuildOptions } from "esbuild";
-import type { Pattern } from "fast-glob";
+import esbuild from "esbuild";
 import FastGlob from "fast-glob";
+
+import type { BuildOptions } from "esbuild";
+import type { Pattern } from "fast-glob";
 
 import defaultConfig from "../config/esbuild.js";
 import { importFile } from "../lib/utils.js";
